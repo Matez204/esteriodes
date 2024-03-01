@@ -18,7 +18,7 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-        ship.update
+        ship.update()
         screen.blit(background_image,background_rect)
         screen.blit(ship.imagen,ship.rect)
         pygame.display.update()
